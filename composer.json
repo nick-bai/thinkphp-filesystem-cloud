@@ -1,0 +1,32 @@
+{
+    "name": "nickbai/thinkphp-filesystem-cloud",
+    "description": "thinkphp6.0 filesystem,include Aliyun and Qiniu",
+    "type": "library",
+    "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0.0",
+        "xxtime/flysystem-aliyun-oss": "^1.4",
+        "liz/flysystem-qiniu": "^1.10",
+        "overtrue/flysystem-cos": "^2.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NickBai",
+            "email": "1902822973@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "nickbai\\filesystem\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "nickbai\\filesystem\\Service"
+            ]
+        }
+    }
+}
